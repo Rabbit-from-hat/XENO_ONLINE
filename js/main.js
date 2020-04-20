@@ -26,6 +26,13 @@
       this.player1Hand = this.deck.shift();
       this.player2Hand = this.deck.shift();
     }
+
+    buttonAdd() {
+      const btnadd = document.createElement('button');
+      btnadd.classList.add('get_card');
+      btnadd.textContent = "カードを山札から取る"
+      document.getElementsByClassName('action_area')[0].appendChild(btnadd);
+    }
   }
 
   const game = new CardGame();
@@ -35,5 +42,6 @@
     game.deal();
     game.show();
     document.getElementById('start_button').style.display = "none";
+    game.buttonAdd();
   });
 }
