@@ -1,0 +1,27 @@
+.deck {
+  display: flex;
+}
+
+.player_card {
+  display: flex;
+}
+
+.player_card p {
+  margin: 0px;
+}
+
+.discard {
+  display: flex;
+}
+
+.hand {
+  display: flex;
+}
+
+.player1 {
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
